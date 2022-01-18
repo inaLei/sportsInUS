@@ -4,15 +4,57 @@
     <meta charset="utf-8">
     <title>Sportarten in den USA</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js" ></script>
+    <script type="text/javascript">
+        const tooltips = {
+            text1: 'blub blub',
+            goaltender: 'Is also called goalie.',
+            bullypoints: 'On the ice are nine bullypoints.',
+            referee: 'You can recognize the referees by their black and white striped tops. For each game are there two linesman and two main referees.', 
+            shootout: 'If no goals are scored in the overtime, then it comes to an shootout. For each team, three players take turns shooting at the opposing goal and their goaltender. The team, which scores more often wins the game. It can be repeated till the game is decided.',
+            zone: 'A point which is in the middle third of the ice.' ,
+            line: 'It is red.' ,
+            two: 'These are defenseman.' ,
+            three: 'These are forwards.' ,
+            shorthanded: 'A team plays shorthanded if they have less players on the ice than the other team. They have to play shorthanded because they caused a penalty.' ,
+
+        } 
+    </script>
   </head>
   <body>
+    <div id='tooltip' ></div>
+    <div><a href="index.html">Back</a></div>
     <div class="container">
       <h1>Icehockey</h1>
-      <p>Cupcake ipsum dolor sit amet cupcake pastry shortbread shortbread. Biscuit halvah sesame snaps wafer chocolate caramels liquorice cheesecake. Cheesecake carrot cake bear claw donut wafer tiramisu chocolate ice cream biscuit. Pie croissant jelly icing donut donut gingerbread cake gingerbread. Oat cake cake sweet chupa chups carrot cake tart. Bear claw liquorice macaroon jujubes croissant. Fruitcake cheesecake tootsie roll cupcake wafer. Cake fruitcake marzipan halvah shortbread soufflé. Bear claw brownie sugar plum bear claw bonbon. Gingerbread sweet roll jujubes danish marzipan. Cookie cupcake toffee candy pastry danish candy canes. Dragée gingerbread jelly beans gummi bears marshmallow topping.
+      <p>The <b>hockey sport</b> has it origins in the 1840s till the 1875s. The <b>Ice rink</b> is circa 30 meters wide and 60 meters long. Per team there are <b>5 players</b> on the ice and one <span onmouseover="showTT('goaltender')" onmouseout="hideTT()" class='tooltipText'>goaltender</span>. A hard rubber disc, <b>the puck</b>, needs to go inside the other teams goal. 
       </p>
-      <p>
-        Pastry cake apple pie toffee oat cake donut marshmallow. Sweet roll apple pie soufflé cupcake lollipop oat cake brownie. Icing apple pie apple pie cheesecake apple pie gummies oat cake. Halvah liquorice donut fruitcake dragée pudding liquorice donut. Marzipan macaroon dragée muffin cupcake jelly beans biscuit. Jelly beans cheesecake cupcake gingerbread oat cake. Marzipan icing marshmallow marzipan lemon drops apple pie topping. Candy canes fruitcake topping marshmallow apple pie. Brownie macaroon cake cookie pie ice cream fruitcake topping. Halvah pudding danish candy candy canes pudding lollipop shortbread dragée. Apple pie topping lollipop cake tart toffee. Powder candy canes tart cake candy tiramisu ice cream. Tootsie roll sesame snaps lollipop croissant jelly-o tiramisu cake. Sesame snaps cupcake apple pie bonbon cotton candy gummi bears shortbread ice cream cookie.
+      <h2>Face-off</h2>
+      <p>After every game interruption there is a new <b>Face-off</b>. For that, two players, one from each team, face each other. They meet at a <span onmouseover="showTT('bullypoints')" onmouseout="hideTT()" class='tooltipText'>bullypoint</span>, where the <span onmouseover="showTT('referee')" onmouseout="hideTT()" class='tooltipText'>referee</span> drops the puck on the ice. This process can repeat more than 50 times per game.  
         </p>
+        <h2>General about the game</h2>
+        <p>In a game there are <b>three thirds with 20 minutes each</b>. In total there are 60 minutes. During the game a clock runs along, which <b>stops</b> at every interruption of the game. The break inbetween the thirds are, usually, <b>15 minutes long</b>. If the game is undecided after the regular playing it comes to an <b>overtime</b>.
+         </p>
+         <p>The winner of the game can also be chosen 
+        by a <span onmouseover="showTT('shootout')" onmouseout="hideTT()" class='tooltipText'>shootout</span>. A goal is declared valid when the puck has <b>completely crossed</b> the goal line. In ice hockey, unlike in other sports, if a video recording is made, it is permitted to use to make a decision.
+        </p>
+        <h2>Offside</h2>
+        <p>Offside is when both skates of a player are completely in the <b>attack zone</b>, that means behind the blue line, <b>before</b> the puck crossed that line completely. If the game gets interrupted by <b>rule violation</b> the referee search for a <span onmouseover="showTT('zone')" onmouseout="hideTT()" class='tooltipText'>neutral zone</span>, for the bully. 
+        </p>
+        <h2>Unauthererized long shot</h2>
+        <p><b>Icing</b> is a free shot, which is taken from the own half behind <b>the opponent's goal line</b>. The referee blows the whistle when the puck has <b>completely crossed</b> the <span onmouseover="showTT('line')" onmouseout="hideTT()" class='tooltipText'>goal line</span>. But if a player of his own team touches the puck before it crossed the red line, the icing shall be considerd cancelled.
+        </p>
+        <h2>Change</h2>
+        <p>The players can be changed, <b>while the entire game</b>. It is a sport that is very fast and requires a lot of strengt. That's why a player is nearly never longer than two minutes, without a pause on the ice. The teams are usually <b>changing in rows</b> through out the game. For that the trainers put three to four rows, consisting of <span onmouseover="showTT('two')" onmouseout="hideTT()" class='tooltipText'>two</span> or <span onmouseover="showTT('three')" onmouseout="hideTT()" class='tooltipText'>three</span> players, together.
+        </p>
+        <h2>Penalties</h2>
+        <p>In case of a <b>foul</b>, the player is <b>sent off the field for a certain time</b>. This player may not be replaced by another player during this time. As a result, this team plays <span onmouseover="showTT('shorthanded')" onmouseout="hideTT()" class='tooltipText'>shorthanded</span>. For <b>lighter offenses</b> the penalty time is two minutes. For <b>more serious fouls</b> a penalty of fives minutes of the game will be imposed. Ten minutes of penalty time are povided, when there are <b>personal fouls</b> or also <b>in case of unsportsmanlike conduct</b>. If a foul ends with an <b>injury to an opponent</b>, a disciplinary penalty is assessed for the remainder of the game. The most common penalty is for a <b>hight stick</b>. Obstruction by <b>holding on</b> and to <b>trip somebody up</b> are other reasons for a penalty. Ice hockey is a <b>very physical sport</b>. Nevertheless, <b>illegal harshness</b> can also be penalized. A goaltender may also receive a penalty, but then he does not have to leave the ice. The team must select another player to serve the penalty for him.
+        </p>
+        <h2>Goal area</h2>
+      <p>The <b>goaltender</b> enjoys an exceptionally <b>high level of protection</b> in this game. The so-called <b>goal area offside</b> shows the strict rules for this. If the goaltender is in the goal area, no player of the opposing team may come too close to him. 
+        </p>
+        <h2>Empty Net</h2>
+        <p>An empty net happens most of the time, when one of the teams is only one goal (sometimes two goals) behind. Then they take their goaltender out of the net and put rather another forward or defenseman on the ice. Now the other team has to play shorthanded, like that it is easier for the trailing team to score the equalizer. If they actually score that goal, they have a <b>chance to win</b> again. The game does not have to be interrupted by a referee, when the trailing team takes out their goaltender. An empty net can also happen, when a penalty is displayed. Then the team who the penalty is not against takes out their goaltender so the other team has to play shorthanded even before the actual penalty is given. This is without any risks, because if one of the opposing players touches the puck, the referees stops the game.
+        </p> 
         <img src="images/icehockey.jpg" width='25%'/>
     </div>
   </body>

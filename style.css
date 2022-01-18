@@ -32,14 +32,28 @@ body {
   height: 100%;
 }
 .baseball{
-  background-image: url(images/icehockey.jpg);
+  background-image: url(images/baseball.jpg);
   background-position-x: -50px;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 .basketball{
-  background-image: url(images/icehockey.jpg);
+  background-image: url(images/basketball2.jpg);
+  background-position-x: -50px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.soccer{
+  background-image: url(images/soccer.jpg);
+  background-position-x: -50px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  }
+.football{
+  background-image: url(images/afootball.jpg);
   background-position-x: -50px;
   background-size: cover;
   width: 100%;
@@ -59,4 +73,15 @@ a:link{
 }
 a:hover {
   text-decoration: none ;
+}
+#tooltip {
+  position:  absolute;
+  display:  none;
+  background-color: #fff;
+  border:  1px solid #fff;
+  padding: 2px;
+  color:  #000;
+}
+.tooltipText {
+  color: red;
 }

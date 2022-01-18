@@ -5,82 +5,51 @@
   <meta charset="utf-8">
   <title>Sportarten in den USA</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-
-  <script>
-    function hideTT() {
-      wmtt.style.display = "none";
-    }
-    
-    function showTT(id) {
-      wmtt = document.getElementById('tooltip');
-      wmtt.innerHTML = texts[id]
-      wmtt.style.display = "block"
-    }
-    
-    document.onmousemove = updateTT;
-    
-    function updateTT(e) {
-      if (wmtt != null && wmtt.style.display == 'block') {
-        x = (e.pageX ? e.pageX : window.event.x) + wmtt.offsetParent.scrollLeft - wmtt.offsetParent.offsetLeft;
-        y = (e.pageY ? e.pageY : window.event.y) + wmtt.offsetParent.scrollTop - wmtt.offsetParent.offsetTop;
-        wmtt.style.left = (x + 20) + "px";
-        wmtt.style.top 	= (y + 20) + "px";
-      }
-    }
-    const texts = {
-      test1 : 'Tooltip text Lorem ipsum cookie dough marshmellow cake',
-      test2: 'bla blub'
-    }
-    </script>
-    <style>
-      .tooltip {
-        position: absolute;
-        display: none;
-        background-color: #FFFFFF;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #000000;
-        padding: 2px;
-        color:#000;
-      }
-    </style>
 </head>
 
 <body>
-  <div id="tooltip" class='tooltip' style='display:hidden;'>askjcasdjshaskdhkahs</div>
-  <div class="headline">Sport in den USA</div>
-  <div class="teaser">großes Bild</div>
-  <div onmouseover="showTT('test1')" onmouseout="hideTT()"> test1</div>
+  <div class="headline">Sports in the US</div>
+  <div class="teaser">In the US many people like to watch and play really different sports.
+    <p>The most popular sports in the US are:
+      </p>
+  </div>
   <div class='sports'>
     <div class='sport'>
       <a href="icehockey.html">
         <div class="icehockey">
-          <div class="link">Eishockey</div>
+          <div class="link">Icehockey</div>
         </div>
       </a>
     </div>
     <div class='sport'>
-      <a href="icehockey.html">
-        <div class="baseball">Baseball</div>
+      <a href="baseball.html">
+        <div class="baseball">
+        <div class="link">Baseball</div>
+      </div>
       </a>
     </div>
     <div class='sport'>
-      <a href="icehockey.html">
-        <div class="football">Football</div>
+      <a href="americanfootball.html">
+        <div class="football">
+          <div class="link">Football</div>
+        </div>
       </a>
     </div>
     <div class='sport'>
-      <a href="icehockey.html">
-        <div class="basketball">Basketball</div>
+      <a href="basketball.html">
+        <div class="basketball">
+          <div class="link">Basketball</div>
+        </div>
       </a>
     </div>
     <div class='sport'>
-      <a href="icehockey.html">
-        <div class="soccer">Soccer</div>
+      <a href="soccer.html">
+        <div class="soccer">
+          <div class="link">Soccer</div>
+        </div>
       </a>
     </div>
   </div>
-  <div onmouseover="showTT('test2')" onmouseout="hideTT()"> test2</div>
 </body>
 
 </html>
